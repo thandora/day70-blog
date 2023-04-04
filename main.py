@@ -118,9 +118,9 @@ class Comment(db.Model):
     parent_post = relationship("BlogPost", back_populates="comments")
 
 
-# # Run once. Create tables in database
-# with app.app_context():
-#     db.create_all()
+# Run once. Create tables in database
+with app.app_context():
+    db.create_all()
 
 
 # # # # Routes # # # #
